@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Jonathan Ben-Ammi">
+	<title>Form Text - Index</title>
+	<meta name="description" content="This is a Flask project for Coding Dojo">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<form action="/process" method="post">
+				<div class="input-line">
+					<label>Name:</label>
+					<input type="text" name="name" />
+				</div>
+				<div class="input-line">
+					<label>Dojo Location:</label>
+					<select name="location">
+						<option value="" selected disabled>Select</option>
+						<option value="San_Jose">San Jose</option>
+						<option value="Seattle">Seattle</option>			
+						<option value="Los_Angeles">Los Angeles</option>
+						<option value="Dallas">Dallas</option>
+						<option value="Chicago">Chicago</option>
+						<option value="Washington_DC">Washington DC</option>
+					</select>
+				</div>
+				<div class="input-line">
+					<label>Favorite Language:</label>	
+					<select name="lang">
+						<option value="" selected disabled>Select</option>
+						<option value="Python">Python</option>
+						<option value="Ruby">Ruby</option>			
+						<option value="Lamp">Lamp</option>
+						<option value="Mean">Mean</option>
+						<option value="IOS">IOS</option>
+					</select>
+				</div>
+				<div>
+					<label>Comment (optional):</label>
+					<textarea name="comment"></textarea>
+				</div>
+				<input class="btn" type="submit" value="Submit" />
+			</form>
+		</div>	
+	</div>
+</body>
+</html>

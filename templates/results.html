@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Jonathan Ben-Ammi">
+	<title>Form Text - Index</title>
+	<meta name="description" content="This is a Flask project for Coding Dojo">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<h3><u>Submitted Info</u></h3>
+			<div class="input-line">
+			<ul>
+				<li>Name:</li>
+				<li>Dojo Location:</li>
+				<li>Favorite Language:</li>
+				<li>Comment:</li>
+			</ul>
+			<ul>
+				<li>{{info['name']}}</li>
+				<li>{{info['location']}}</li>
+				<li>{{info['lang']}}</li>
+				<li></li>
+			</ul>
+			</div>
+			<div class="input-line">
+				<p>{{info['comment']}}</p>
+			</div>
+			<a href="/"><button class="btn">Back</button></a>	
+		</div>
+	</div>
+</body>
+</html>

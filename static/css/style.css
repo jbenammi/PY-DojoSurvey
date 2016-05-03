@@ -1,0 +1,63 @@
+* {
+	margin: 0%;
+	padding: 0px;
+	font-family: arial, sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin: 2% auto;
+}
+
+.box {
+	width: 40%;
+	margin: 2% auto;
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.input-line, h3 {
+	padding-bottom: 5px;
+}
+
+h3 {
+	color: blue;
+}
+
+label {
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+}
+
+textarea, input {
+	width: 58%;
+}
+
+ul li {
+	list-style: none;
+}
+
+ul:nth-child(1) li {
+	font-weight: bold;
+}
+
+ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 48%;
+}
+
+.btn {
+	width: inherit;
+	padding: 5px;
+	color: white;
+	background: blue;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #888888;
+	display: inline-block;
+	margin-top: 5%;
+	margin-left: 88%;
+
+}
