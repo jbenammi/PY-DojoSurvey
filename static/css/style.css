@@ -14,10 +14,16 @@
 	margin: 2% auto;
 	border: 1px solid black;
 	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #888888;
 }
 
 .input-line, h3 {
 	padding-bottom: 5px;
+}
+
+.warning {
+	color: red;
 }
 
 h3 {

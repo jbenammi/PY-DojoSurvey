@@ -12,13 +12,19 @@
 		<div class="box">
 			<form action="/process" method="post">
 				<div class="input-line">
+				{% if session["val_name"] != "" %}
+				<p class="warning">{{session["val_name"]}}</p>
+				{% endif %}
 					<label>Name:</label>
 					<input type="text" name="name" />
 				</div>
 				<div class="input-line">
+				{% if session["val_location"] != "" %}
+				<p class="warning">{{session["val_location"]}}</p>
+				{% endif %}
 					<label>Dojo Location:</label>
 					<select name="location">
-						<option value="" selected disabled>Select</option>
+						<option value="">Select</option>
 						<option value="San_Jose">San Jose</option>
 						<option value="Seattle">Seattle</option>			
 						<option value="Los_Angeles">Los Angeles</option>
@@ -28,9 +34,12 @@
 					</select>
 				</div>
 				<div class="input-line">
+				{% if session["val_lang"] != "" %}
+				<p class="warning">{{session["val_lang"]}}</p>
+				{% endif %}
 					<label>Favorite Language:</label>	
 					<select name="lang">
-						<option value="" selected disabled>Select</option>
+						<option value="">Select</option>
 						<option value="Python">Python</option>
 						<option value="Ruby">Ruby</option>			
 						<option value="Lamp">Lamp</option>
@@ -39,6 +48,9 @@
 					</select>
 				</div>
 				<div>
+				{% if session["val_comment"] != "" %}
+				<p class="warning">{{session["val_comment"]}}</p>
+				{% endif %}
 					<label>Comment (optional):</label>
 					<textarea name="comment"></textarea>
 				</div>
